@@ -1,0 +1,26 @@
+.img1{
+    width: 140px;
+    display: inline-block;
+ }
+ 
+ .img2{
+    width: 152px;
+    display: inline-block;
+ }
+ 
+ .img3{
+    width: 153px;
+    display: inline-block;
+ }
+ 
+ .title{
+    font-size: 30px;
+    color: rgba(79, 21, 6, 0.892);
+    
+ }
+ 
+ .border{
+    border: 6px solid #100dd4;
+    padding: 0px;
+    border-style: dashed;
+ }
