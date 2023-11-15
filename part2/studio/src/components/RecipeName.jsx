@@ -1,8 +1,14 @@
 import recipedata from "./recipe.json";
-
+import "./styling.css"
 function RecipeName() {
-  <h1>CHICKEN DUM BIRYANI</h1>
-  return recipedata;
+  let recipeName = recipedata.map(recipe => {
+    return <h1 key={recipe.name}>{recipe.name}</h1>;
+  })
+  return (
+    <div>
+    {recipeName}
+    </div>
+  );
 }
 
 export default RecipeName;

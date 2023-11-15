@@ -7,14 +7,23 @@ import RecipeImage from "./components/RecipeImage";
 import RecipeName from "./components/RecipeName";
 
 export default function App() {
+  const pin=recipedata.map(recipe =>{ 
+
   return (
-    <>
-      <RecipeImage />
-      <RecipeName />
+    <div key = {recipe.name}>
+      <RecipeImage recipe={recipe}/>
+      <RecipeName recipe={recipe}/>
       <RateARecipe rating={3} />
       <Button saveButton={true} />
-      <AuthorInfo />
-      <IngredientList />
-    </>
+      <AuthorInfo recipe={recipe}/>
+      <IngredientList recipe={recipe}/>
+      </div>
   );
+  });
+    return(
+      <>
+      {pin}
+      </>
+    );
+  
 }
