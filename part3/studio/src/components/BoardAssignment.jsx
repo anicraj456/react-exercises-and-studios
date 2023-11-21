@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function BoardAssignment () {
-   const [boardName, setBoardName] = useState("No boards");
+   const [boardName, setBoardName] = useState("No boards yet!");
    const boards = [
       {
          label: "Snacks Recipes",
